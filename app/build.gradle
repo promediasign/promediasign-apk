@@ -18,7 +18,7 @@ android {
         release {
             storeFile file('../signing-key.keystore')
             storePassword System.getenv("KEYSTORE_PASSWORD") ?: '11Mesahast'
-            keyAlias System.getenv("KEY_ALIAS") ?: 'key0'
+            keyAlias System.getenv("KEY_ALIAS") ?: 'upload'
             keyPassword System.getenv("KEY_PASSWORD") ?: '11Mesahast'
         }
     }
