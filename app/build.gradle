@@ -12,6 +12,9 @@ android {
         targetSdk 34
         versionCode 5000262
         versionName "4.9.5"
+        
+        // Important: Keep existing DEX files
+        multiDexEnabled true
     }
 
     signingConfigs {
@@ -36,12 +39,23 @@ android {
     }
 
     packagingOptions {
+        // Include pre-compiled DEX files
+        jniLibs {
+            useLegacyPackaging = true
+        }
         resources {
             excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0', 'META-INF/*.kotlin_module']
+        }
+    }
+    
+    // Include the pre-compiled dex files
+    sourceSets {
+        main {
+            java.srcDirs = []
         }
     }
 }
 
 dependencies {
-    // No dependencies - app is self-contained from decompiled APK
+    // No dependencies
 }
