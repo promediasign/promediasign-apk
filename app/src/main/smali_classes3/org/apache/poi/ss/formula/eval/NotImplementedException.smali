@@ -1,0 +1,27 @@
+.class public Lorg/apache/poi/ss/formula/eval/NotImplementedException;
+.super Ljava/lang/RuntimeException;
+.source "SourceFile"
+
+
+# static fields
+.field private static final serialVersionUID:J = -0x510e58bd3a3b51b5L
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lorg/apache/poi/ss/formula/eval/NotImplementedException;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    return-void
+.end method

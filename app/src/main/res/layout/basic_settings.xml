@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/welcome_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="38.0sp" android:layout_height="fill_parent" android:layout_margin="3.0sp" android:src="@drawable/logo" android:scaleType="centerInside" android:adjustViewBounds="true" />
+        <TextView android:textSize="30.0sp" android:id="@id/welcome_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0sp" android:text="Welcome" />
+    </LinearLayout>
+    <Button android:textSize="30.0sp" android:layout_gravity="center_horizontal" android:id="@id/back_to_playing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0sp" android:text="Go to playback" />
+    <androidx.fragment.app.FragmentContainerView android:name="sk.mimac.slideshow.settings.SettingsFragment" android:id="@id/basic_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

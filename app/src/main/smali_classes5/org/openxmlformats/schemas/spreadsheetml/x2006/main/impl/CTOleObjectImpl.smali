@@ -1,0 +1,2108 @@
+.class public Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;
+.super Lorg/apache/xmlbeans/impl/values/XmlComplexContentImpl;
+.source "SourceFile"
+
+# interfaces
+.implements Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/CTOleObject;
+
+
+# static fields
+.field private static final AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+.field private static final SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "progId"
+
+    const-string v2, ""
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "dvAspect"
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "link"
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "oleUpdate"
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "autoLoad"
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "shapeId"
+
+    invoke-direct {v0, v2, v1}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    new-instance v0, Lorg/apache/poi/javax/xml/namespace/QName;
+
+    const-string v1, "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+
+    const-string v2, "id"
+
+    invoke-direct {v0, v1, v2}, Lorg/apache/poi/javax/xml/namespace/QName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    sput-object v0, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/apache/xmlbeans/SchemaType;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lorg/apache/xmlbeans/impl/values/XmlComplexContentImpl;-><init>(Lorg/apache/xmlbeans/SchemaType;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getAutoLoad()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0, v2}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_default_attribute_value(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlAnySimpleType;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    if-nez v1, :cond_1
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_1
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getBooleanValue()Z
+
+    move-result v1
+
+    monitor-exit v0
+
+    return v1
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getDvAspect()Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect$Enum;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0, v2}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_default_attribute_value(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlAnySimpleType;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    if-nez v1, :cond_1
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :cond_1
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getEnumValue()Lorg/apache/xmlbeans/StringEnumAbstractBase;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect$Enum;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getId()Ljava/lang/String;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getStringValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getLink()Ljava/lang/String;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getStringValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getOleUpdate()Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate$Enum;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getEnumValue()Lorg/apache/xmlbeans/StringEnumAbstractBase;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate$Enum;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getProgId()Ljava/lang/String;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    monitor-exit v0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getStringValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public getShapeId()J
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    monitor-exit v0
+
+    const-wide/16 v0, 0x0
+
+    return-wide v0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Lorg/apache/xmlbeans/SimpleValue;->getLongValue()J
+
+    move-result-wide v1
+
+    monitor-exit v0
+
+    return-wide v1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetAutoLoad()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetDvAspect()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetId()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetLink()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetOleUpdate()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public isSetProgId()Z
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    monitor-exit v0
+
+    return v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public setAutoLoad(Z)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setBooleanValue(Z)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setDvAspect(Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect$Enum;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setEnumValue(Lorg/apache/xmlbeans/StringEnumAbstractBase;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setId(Ljava/lang/String;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setStringValue(Ljava/lang/String;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setLink(Ljava/lang/String;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setStringValue(Ljava/lang/String;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setOleUpdate(Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate$Enum;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setEnumValue(Lorg/apache/xmlbeans/StringEnumAbstractBase;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setProgId(Ljava/lang/String;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/SimpleValue;->setStringValue(Ljava/lang/String;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public setShapeId(J)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/SimpleValue;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1, p2}, Lorg/apache/xmlbeans/SimpleValue;->setLongValue(J)V
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public unsetAutoLoad()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public unsetDvAspect()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public unsetId()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public unsetLink()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public unsetOleUpdate()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public unsetProgId()V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->remove_attribute(Lorg/apache/poi/javax/xml/namespace/QName;)V
+
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetAutoLoad()Lorg/apache/xmlbeans/XmlBoolean;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlBoolean;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0, v2}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_default_attribute_value(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlAnySimpleType;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlBoolean;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetDvAspect()Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0, v2}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_default_attribute_value(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/XmlAnySimpleType;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    monitor-exit v0
+
+    return-object v1
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetId()Lorg/openxmlformats/schemas/officeDocument/x2006/relationships/STRelationshipId;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/officeDocument/x2006/relationships/STRelationshipId;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetLink()Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STXstring;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STXstring;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetOleUpdate()Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetProgId()Lorg/apache/xmlbeans/XmlString;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlString;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xgetShapeId()Lorg/apache/xmlbeans/XmlUnsignedInt;
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlUnsignedInt;
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+.end method
+
+.method public xsetAutoLoad(Lorg/apache/xmlbeans/XmlBoolean;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->AUTOLOAD$8:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlBoolean;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlBoolean;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/XmlObject;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetDvAspect(Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->DVASPECT$2:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STDvAspect;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetId(Lorg/openxmlformats/schemas/officeDocument/x2006/relationships/STRelationshipId;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->ID$12:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/officeDocument/x2006/relationships/STRelationshipId;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/officeDocument/x2006/relationships/STRelationshipId;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/XmlObject;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetLink(Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STXstring;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->LINK$4:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STXstring;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STXstring;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/XmlObject;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetOleUpdate(Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->OLEUPDATE$6:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/STOleUpdate;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetProgId(Lorg/apache/xmlbeans/XmlString;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->PROGID$0:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlString;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlString;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/XmlObject;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method
+
+.method public xsetShapeId(Lorg/apache/xmlbeans/XmlUnsignedInt;)V
+    .locals 3
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->monitor()Ljava/lang/Object;
+
+    move-result-object v0
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->check_orphaned()V
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    sget-object v2, Lorg/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTOleObjectImpl;->SHAPEID$10:Lorg/apache/poi/javax/xml/namespace/QName;
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->find_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlUnsignedInt;
+
+    if-nez v1, :cond_0
+
+    invoke-virtual {p0}, Lorg/apache/xmlbeans/impl/values/XmlObjectBase;->get_store()Lorg/apache/xmlbeans/impl/values/TypeStore;
+
+    move-result-object v1
+
+    invoke-interface {v1, v2}, Lorg/apache/xmlbeans/impl/values/TypeStore;->add_attribute_user(Lorg/apache/poi/javax/xml/namespace/QName;)Lorg/apache/xmlbeans/impl/values/TypeStoreUser;
+
+    move-result-object v1
+
+    check-cast v1, Lorg/apache/xmlbeans/XmlUnsignedInt;
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1, p1}, Lorg/apache/xmlbeans/XmlObject;->set(Lorg/apache/xmlbeans/XmlObject;)Lorg/apache/xmlbeans/XmlObject;
+
+    monitor-exit v0
+
+    return-void
+
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
+.end method

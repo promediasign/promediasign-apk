@@ -1,0 +1,224 @@
+.class public final Lorg/apache/poi/hssf/record/DBCellRecord;
+.super Lorg/apache/poi/hssf/record/StandardRecord;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Cloneable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/apache/poi/hssf/record/DBCellRecord$Builder;
+    }
+.end annotation
+
+
+# static fields
+.field public static final BLOCK_SIZE:I = 0x20
+
+.field public static final sid:S = 0xd7s
+
+
+# instance fields
+.field private final field_1_row_offset:I
+
+.field private final field_2_cell_offsets:[S
+
+
+# direct methods
+.method public constructor <init>(I[S)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lorg/apache/poi/hssf/record/StandardRecord;-><init>()V
+
+    iput p1, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_1_row_offset:I
+
+    iput-object p2, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/apache/poi/hssf/record/RecordInputStream;)V
+    .locals 3
+
+    .line 2
+    invoke-direct {p0}, Lorg/apache/poi/hssf/record/StandardRecord;-><init>()V
+
+    invoke-virtual {p1}, Lorg/apache/poi/hssf/record/RecordInputStream;->readUShort()I
+
+    move-result v0
+
+    iput v0, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_1_row_offset:I
+
+    invoke-virtual {p1}, Lorg/apache/poi/hssf/record/RecordInputStream;->remaining()I
+
+    move-result v0
+
+    div-int/lit8 v0, v0, 0x2
+
+    new-array v0, v0, [S
+
+    iput-object v0, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_0
+
+    invoke-virtual {p1}, Lorg/apache/poi/hssf/record/RecordInputStream;->readShort()S
+
+    move-result v2
+
+    aput-short v2, v1, v0
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lorg/apache/poi/hssf/record/DBCellRecord;->clone()Lorg/apache/poi/hssf/record/DBCellRecord;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public clone()Lorg/apache/poi/hssf/record/DBCellRecord;
+    .locals 0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public getDataSize()I
+    .locals 1
+
+    iget-object v0, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    array-length v0, v0
+
+    mul-int/lit8 v0, v0, 0x2
+
+    add-int/lit8 v0, v0, 0x4
+
+    return v0
+.end method
+
+.method public getSid()S
+    .locals 1
+
+    const/16 v0, 0xd7
+
+    return v0
+.end method
+
+.method public serialize(Lorg/apache/poi/util/LittleEndianOutput;)V
+    .locals 3
+
+    iget v0, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_1_row_offset:I
+
+    invoke-interface {p1, v0}, Lorg/apache/poi/util/LittleEndianOutput;->writeInt(I)V
+
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-object v1, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_0
+
+    aget-short v1, v1, v0
+
+    invoke-interface {p1, v1}, Lorg/apache/poi/util/LittleEndianOutput;->writeShort(I)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    new-instance v0, Ljava/lang/StringBuffer;
+
+    const-string v1, "[DBCELL]\n    .rowoffset = "
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
+
+    iget v1, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_1_row_offset:I
+
+    invoke-static {v1}, Lorg/apache/poi/util/HexDump;->intToHex(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v1, "\n"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const/4 v2, 0x0
+
+    :goto_0
+    iget-object v3, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    array-length v3, v3
+
+    if-ge v2, v3, :cond_0
+
+    const-string v3, "    .cell_"
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
+
+    const-string v3, " = "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    iget-object v3, p0, Lorg/apache/poi/hssf/record/DBCellRecord;->field_2_cell_offsets:[S
+
+    aget-short v3, v3, v2
+
+    invoke-static {v3}, Lorg/apache/poi/util/HexDump;->shortToHex(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "[/DBCELL]\n"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

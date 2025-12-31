@@ -1,0 +1,15 @@
+.class public abstract Lio/opencensus/contrib/http/util/HttpPropagationUtil;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static getCloudTraceFormat()Lio/opencensus/trace/propagation/TextFormat;
+    .locals 1
+
+    new-instance v0, Lio/opencensus/contrib/http/util/CloudTraceFormat;
+
+    invoke-direct {v0}, Lio/opencensus/contrib/http/util/CloudTraceFormat;-><init>()V
+
+    return-object v0
+.end method

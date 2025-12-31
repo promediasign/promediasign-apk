@@ -1,0 +1,53 @@
+<configuration>
+	<appender name="file" class="sk.mimac.slideshow.logging.AndroidRollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<file>/slideshow/log.txt</file>
+		<rollingPolicy class="sk.mimac.slideshow.logging.AndroidFixedWindowRollingPolicy">
+			<fileNamePattern>/slideshow/log-%i.txt</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>10</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>250KB</maxFileSize>
+		</triggeringPolicy>
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="sk.mimac.slideshow.logging.LoggingLayout"/>
+		</encoder>
+		<lazy>true</lazy>
+	</appender>
+	<appender name="file-error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<file>/slideshow/error-log.txt</file>
+		<rollingPolicy class="sk.mimac.slideshow.logging.AndroidFixedWindowRollingPolicy">
+			<fileNamePattern>/slideshow/error-log-%i.txt</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>2</maxIndex>
+		</rollingPolicy>
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>200KB</maxFileSize>
+		</triggeringPolicy>
+		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+			<layout class="sk.mimac.slideshow.logging.LoggingLayout"/>
+		</encoder>
+		<lazy>true</lazy>
+	</appender>
+	<appender name="logcat" class="ch.qos.logback.classic.android.LogcatAppender">
+		<encoder>
+			<pattern>[%thread] %m%n</pattern>
+		</encoder>
+	</appender>
+	<logger name="sk.mimac" level="TRACE"/>
+	<logger name="nl.tudelft.ipv8" level="TRACE" />
+	<logger name="io.milton.http.webdav.PropertySourcePatchSetter" level="ERROR"/>
+	<logger name="io.milton.http.HandlerHelper" level="ERROR"/>
+	<logger name="org.apache.ftpserver.impl.PassivePorts" level="ERROR"/>
+	<root level="WARN">
+		<appender-ref ref="file" />
+		<appender-ref ref="file-error" />
+		<appender-ref ref="logcat" />
+	</root>
+</configuration>

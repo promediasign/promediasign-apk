@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <sk.mimac.slideshow.gui.PercentageLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" />
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@id/left_drawer" android:background="#ff222222" android:layout_width="240.0dip" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/drawer_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_width="82.0dip" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/logo" />
+            <LinearLayout android:orientation="vertical" android:id="@id/drawer_header_texts" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffbbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/app_name" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffbbbbbb" android:id="@id/drawer_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffbbbbbb" android:id="@id/drawer_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffbbbbbb" android:id="@id/drawer_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView android:layout_gravity="start" android:id="@id/drawer_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+    </LinearLayout>
+    <ScrollView android:layout_gravity="end" android:id="@id/right_drawer" android:background="#ff222222" android:layout_width="240.0dip" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="240.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0dip" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/control_media_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Current media" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@id/control_media_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                <ImageButton android:id="@id/control_play" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_play" android:layout_weight="0.25" style="@style/ControlImageButton" />
+                <ImageButton android:id="@id/control_pause" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_pause" android:layout_weight="0.25" style="@style/ControlImageButton" />
+                <ImageButton android:id="@id/control_previous" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_previous" android:layout_weight="0.25" style="@style/ControlImageButton" />
+                <ImageButton android:id="@id/control_next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_next" android:layout_weight="0.25" style="@style/ControlImageButton" />
+            </LinearLayout>
+            <View style="@style/Divider" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/control_layout_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Active screen layout" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@id/control_layout_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="" />
+            <Button android:textSize="18.0dip" android:textColor="#ffdddddd" android:gravity="center" android:id="@id/control_layout_change" android:background="@drawable/button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Change" />
+            <View style="@style/Divider" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/control_playlist_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Active playlist" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffe4e4e4" android:gravity="center" android:id="@id/control_playlist_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="" />
+            <Button android:textSize="18.0dip" android:textColor="#ffdddddd" android:gravity="center" android:id="@id/control_playlist_change" android:background="@drawable/button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Change" />
+            <Button android:textSize="18.0dip" android:textColor="#ffdddddd" android:gravity="center" android:id="@id/control_duration_change" android:background="@drawable/button_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Change" android:backgroundTint="#ff444444" />
+            <View style="@style/Divider" />
+            <TextView android:textSize="20.0dip" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/control_volume_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="Volume" />
+            <SeekBar android:id="@id/control_volume_state" android:background="@drawable/slider_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressBackgroundTint="#ff000000" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
