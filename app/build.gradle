@@ -12,23 +12,20 @@ android {
         targetSdk 34
         versionCode 5000262
         versionName "4.9.5"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     signingConfigs {
         release {
             storeFile file('../signing-key.keystore')
-            storePassword '11Mesahast'
-            keyAlias 'key0'
-            keyPassword '11Mesahast'
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: '11Mesahast'
+            keyAlias System.getenv("KEY_ALIAS") ?: 'key0'
+            keyPassword System.getenv("KEY_PASSWORD") ?: '11Mesahast'
         }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
     }
@@ -46,7 +43,5 @@ android {
 }
 
 dependencies {
-    // Add dependencies as needed
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    // No dependencies - app is self-contained from decompiled APK
 }
